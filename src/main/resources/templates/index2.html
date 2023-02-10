@@ -1,67 +1,55 @@
 <!DOCTYPE html>
-<html
-        xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-        layout:decorate="~{layout/layout}">
-<head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 해당 html페이지에서만 사용할 css, script -->
-  <th:block layout:fragment="css">
-    <link th:href="@{/css/mainPage/index.css}" />
-  </th:block>
-  <th:block layout:fragment="script">
-    <script th:src="@{/js/mainPage/index.js}"></script>
-  </th:block>
-</head>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--  <link rel="stylesheet" type="text/css" href="/css/mainPage/index.css">-->
+<!--  <script src="/js/mainPage/index.js" defer></script>-->
+<!-- 해당 html페이지에서만 사용할 css, script -->
+<th:block layout:fragment="css">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/mainPage/index.css}" />
+</th:block>
+<th:block layout:fragment="script">
+  <script th:src="@{/js/mainPage/index.js}" defer></script>
+</th:block>
+
 <div layout:fragment="content">
-  <h2 style="text-align:center">Slideshow Gallery</h2>
+  <div class="slideshow-container">
 
-  <div class="container">
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
       <img src="/image/thunder.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
       <img src="/image/ice.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
       <img src="/image/wind.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
       <img src="/image/fire.jpg" style="width:100%">
+      <div class="text">Caption Four</div>
     </div>
+
     <a class="prev" onclick="plusSlides(-1)">❮</a>
     <a class="next" onclick="plusSlides(1)">❯</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="/image/thunder.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="/image/ice.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="/image/wind.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="/image/fire.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-      </div>
-    </div>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
   </div>
 </div>
-<!--    <br>-->
-<!--    <div style="text-align:center">-->
-<!--      <span class="dot" onclick="currentSlide(1)"></span>-->
-<!--      <span class="dot" onclick="currentSlide(2)"></span>-->
-<!--      <span class="dot" onclick="currentSlide(3)"></span>-->
-<!--    </div>-->
+
 </html>
