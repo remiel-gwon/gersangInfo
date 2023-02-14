@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:id="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layout/layout}">
 
 <!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
@@ -30,57 +31,67 @@
           <a href="https://twitter.com/codrops" class="oh"><span class="oh__inner">@codrops</span></a>
         </div>
         <div class="grid__cell grid__cell-c1-r1">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/indiaW.jpg)" data-item="item-1"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-1"><img th:class="icon_img" src="/image/indiaW.jpg"></div>
+<!--            <div class="grid__cell-img-inner"  style="background-image:url(/image/indiaW.jpg)" data-item="item-1"></div>-->
+            <p class="hover_text">캐 릭 터</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c3-r1">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/indiaM.jpg)" data-item="item-2"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-2"><img th:class="icon_img" src="/image/indiaM.jpg"></div>
+            <p class="hover_text">아 이 템</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c4-r1">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/chinaM.jpg)" data-item="item-3"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-3"><img th:class="icon_img" src="/image/chinaM.jpg"></div>
+            <p class="hover_text">던 전</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c1-r2">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/taiwanM.jpg)" data-item="item-4"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-4"><img th:class="icon_img" src="/image/taiwanM.jpg"></div>
+            <p class="hover_text">상 재 계 산</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c3-r2">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/josunM.jpg)" data-item="item-5"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-5"><img th:class="icon_img" src="/image/josunM.jpg"></div>
+            <p class="hover_text">주 술, 제 작</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c2-r3">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/josunW.jpg)" data-item="item-6"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-6"><img th:class="icon_img" src="/image/josunW.jpg"></div>
+            <p class="hover_text">퀘 스 트</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c4-r3">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/japanM.jpg)" data-item="item-7"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-7"><img th:class="icon_img" src="/image/japanM.jpg"></div>
+            <p class="hover_text">생 산 시 설</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c1-r4">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/japanW.jpg)" data-item="item-8"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-8"><img th:class="icon_img" src="/image/japanW.jpg"></div>
+            <p class="hover_text">상 재 계 산</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c3-r4">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/chinaW.jpg)" data-item="item-9"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-9"><img th:class="icon_img" src="/image/chinaW.jpg"></div>
+            <p class="hover_text">상 재 계 산</p>
           </div>
         </div>
         <div class="grid__cell grid__cell-c3-r5">
-          <div class="grid__cell-img">
-            <div class="grid__cell-img-inner" style="background-image:url(/image/taiwanW.jpg)" data-item="item-10"></div>
+          <div class="grid__cell-img banner_img">
+            <div class="grid__cell-img-inner" data-item="item-10"><img th:class="icon_img" src="/image/taiwanW.jpg"></div>
+            <p class="hover_text">상 재 계 산</p>
           </div>
         </div>
       </div>
-
     </main>
   </div>
 </html>
